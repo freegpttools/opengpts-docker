@@ -1,0 +1,10 @@
+version: "3"
+services:
+  server:
+    build: 
+      context: .
+    environment:
+      - PORT=8000
+      - OPENAI_API_KEY=sk-...
+    ports:
+      - 8000:8000
